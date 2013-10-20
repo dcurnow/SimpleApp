@@ -1,0 +1,24 @@
+<!doctype  html>
+<html>
+<head>
+<title>Simple App</title>
+<style>
+body{background-color:#333333;color:#efefef;}
+</style>
+</head>
+<body>
+<button id="simple">Do Something</button>
+<button id="reset">reset</button>
+<div id="output"></div>
+<script src="js/zepto.min.js"></script>
+<script src="js/simple.js"></script>
+<script>
+	$("#simple").click(function(){
+	simple.dosomething($("#output"));
+});
+	$("#reset").click(function(){
+	$("#output").html('');
+});
+</script>
+</body>
+</html>
